@@ -1,0 +1,12 @@
+[Unit]
+Description = Python API Service
+After = network.target
+
+[Service]
+user = Ryan
+group = Ryan
+WorkingDirectory =/home/guest/CPSC222_assignments/API.py
+Restart = always
+
+[Install]
+WantedBy = Multi-user.target
