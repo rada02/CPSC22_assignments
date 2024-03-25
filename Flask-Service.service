@@ -3,10 +3,12 @@ Description = Python API Service
 After = network.target
 
 [Service]
-user = Ryan
-group = Ryan
-WorkingDirectory =/home/guest/CPSC222_assignments/API.py
-Restart = always
+user = guest
+group = guest
+ExecStart = usr/bin/python3 /home/guest/CPSC222_assignments/API.py
+Description = Python API Service
+After = network.target
 
 [Install]
 WantedBy = Multi-user.target
+Restart = always
