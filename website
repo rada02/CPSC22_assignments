@@ -9,7 +9,7 @@ Server {
         server_name 10.0.0.111;
 
         ssl_certificate /home/guest/CPSC222_assignments/server.crt;
-        ssl_certificate_key /home/sebastian/CPSC222_assignments/server.key;
+        ssl_certificate_key /home/guest/CPSC222_assignments/server.key;
 
         location /{
 
